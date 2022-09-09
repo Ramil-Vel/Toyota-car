@@ -1,0 +1,204 @@
+
+/* background */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 1200%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* timer */
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    background-color: rgba(251, 248, 249, 0.9);
+    font-size: 60px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: 'Asul', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auto {
+    background-color: rgba(251, 248, 249, 0.82);
+    height: 300px;
+    width: 200px;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+
+}
+h3 {
+    font-family: 'Asul', sans-serif;
+    font-size: 30px;
+}
+.days, .hours, .minutes, .seconds {
+    font-family: 'Asul', sans-serif;
+    font-size: 40px;
+}
+.red {
+    font-size: 60px;
+    border: none;
+    font-family: 'Staatliches', cursive;
+    color: red;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+}
+button {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Slide */
+
+
+.great {
+    font-size: 60px;
+    border: none;
+    background: none;
+}
+.containers {
+    display: flex;
+}
+.itemss {
+    flex: 1;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Cairo', sans-serif;
+    margin: 5px;
+    position: relative;
+}
+
+.main {
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    background-color: white;
+    color: black;
+    font-size: 0;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.par {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    background-color: white;
+    color: black;
+    font-size: 0;
+    border-radius: 7px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.price {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: white;
+    color: black;
+    font-size: 0;
+    border-radius: 7px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.selected {
+    flex: 4;
+}
+
+.selected h4 {
+    font-size: 40px;
+    transition: all 1s ease-in;
+}
+.selected .par {
+    font-size: 20px;
+    transition: all 1s ease-in;
+}
+.selected .price {
+    font-size: 35px;
+    transition: all 1s ease-in;
+}
+
+.one {
+    background-image: url('https://images.unsplash.com/photo-1617469767053-d3b523a0b982?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1531&q=80');
+    border-radius:10px;
+}
+
+.two {
+    background-image: url('https://images.unsplash.com/photo-1626072557464-90403d788e8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+    border-radius:10px;
+    }
+
+.three {
+    background-image: url('https://images.unsplash.com/photo-1638618164682-12b986ec2a75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    border-radius:10px;
+}
+
+.four {
+    background-image: url('https://images.unsplash.com/photo-1610855143470-0967a7348972?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80');
+    border-radius:10px;
+}
+
+.five {
+    background-image: url('https://images.unsplash.com/photo-1599923819968-1b5ac59c0d5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80');
+    border-radius:10px;
+}
+
+.six {
+    background-image: url('https://images.unsplash.com/photo-1611580568467-a8e2bb344bbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+    border-radius:10px;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    font-family: 'Asul', sans-serif;
+    font-size: 40px;
+}
+
+/* mobile */
+@media all and (max-width: 800px){
+    h1 {
+    font-size: 40px;
+    }
+    .main {
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 500px){
+    h1 {
+    font-size: 30px;
+    }
+    .main {
+        font-size: 10px;
+    }
+}
